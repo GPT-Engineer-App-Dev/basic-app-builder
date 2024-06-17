@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import Notes from './components/Notes';
 
 function Home() {
   return (
@@ -32,7 +33,7 @@ function App() {
         </ul>
       </nav>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Notes />} />
         <Route path="/about" element={<About />} />
       </Routes>
     </Router>
